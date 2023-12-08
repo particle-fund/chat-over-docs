@@ -3,38 +3,45 @@
 This prototype allows users to chat over their documentns.
 
 ## Table of Contents
-- [Quick Start](#quick-start)
 - [Project Overview](#project-overview)
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-
-## Quick Start
-
-```docker build -t chat_over_docs .```
-
-```docker run -it --name chat_over_docs chat_over_docs /bin/bash```
-
-```vi chat_over_docs.py```
-
-Paste in your OpenAI secret key
-
-Copy your directory of documents into the container.
-
-```docker cp /path/to/local/directory chat_over_docs:/app```
-
-```python chat_over_docs.py```
-
-Enter the path of 
+- [Quick Start](#quick-start)
 
 ## Project Overview
 
-Provide a more detailed description of your project. Explain its purpose, features, and any other relevant information.
+This project allows users to:
 
-## Prerequisites
+📋 Upload a directory of PDF files
 
-List any software, libraries, or other dependencies that users need to have installed before they can use your project.
+💬 Chat with their directory of PDF files
 
-## Getting Started
+💡 Have the document for responses cited
 
-Guide users through getting your project up and running on their local machine.
+🧠 Maintain memory of the conversation
+
+## Quick Start
+
+1. Build your container image:
+
+```docker build -t chat_over_docs .```
+
+2. Run your container using your image:
+
+```docker run -it --name chat_over_docs chat_over_docs /bin/bash```
+
+3. Open the executable file to add your OpenAI key
+
+```vi chat_over_docs.py```
+
+4. Add your OpenAI key
+
+5. Copy your directory of documents into the container
+
+```docker cp /path/to/local/directory chat_over_docs:/app```
+
+6. Start the chat app
+
+```python chat_over_docs.py```
+
+7. Enter the path of your documents directory.
+
+8. Start chatting!
